@@ -2,7 +2,7 @@
 puts "How many cents do you have?"
 cents = gets.strip.to_i
 
-bucket = {"quarters"=>0, "dimes"=>0, "nickel"=>0, "pennies"=>0}
+buckets = {"quarters"=>0, "dimes"=>0, "nickels"=>0, "pennies"=>0}
 
 # if its > 25 take out 25 and add quarter to bucket
 
