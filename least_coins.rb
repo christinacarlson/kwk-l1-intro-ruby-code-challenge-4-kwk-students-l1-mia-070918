@@ -32,4 +32,4 @@ def least_coins(cents)
   end
 end      
 
-least_coins(cents)
+ puts least_coins(cents)
