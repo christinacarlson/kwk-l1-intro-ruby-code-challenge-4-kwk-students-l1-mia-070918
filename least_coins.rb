@@ -28,6 +28,7 @@ def least_coins(cents)
         cents -= 5
       elsif cents >= 1
         cents -= 1 
+      elsif puts "done"
     end 
   end
 end      
