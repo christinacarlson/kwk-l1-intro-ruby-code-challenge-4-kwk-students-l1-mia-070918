@@ -22,13 +22,18 @@ def least_coins(cents)
   until cents == 0
     if cents >= 25
       cents -= 25
+      puts cents
       elsif cents >= 10 
         cents -= 10 
+        puts cents
       elsif cents >= 5 
         cents -= 5
+        puts cents 
       elsif cents >= 1
         cents -= 1 
-      else puts "done"
+        puts cents
+      else 
+        puts "done"
     end 
   end
 end      
