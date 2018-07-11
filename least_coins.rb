@@ -26,19 +26,15 @@ def least_coins(cents)
   until cents == 0
     if cents >= 25
       cents -= 25
-      puts cents
       buckets["quarters"]= q +=1
       elsif cents >= 10 
         cents -= 10 
-        puts cents
         buckets["dimes"]= d +=1
       elsif cents >= 5 
         cents -= 5
-        puts cents 
         buckets["nickels"]= n +=1
       elsif cents >= 1
         cents -= 1 
-        puts cents
         buckets["pennies"]= p +=1
     end 
   end
