@@ -1,6 +1,6 @@
 # user imputs amount of coins 
 puts "How many cents do you have?"
-#cents = gets.strip.to_i
+cents = gets.strip.to_i
 
 bucket = {}
 
@@ -18,7 +18,7 @@ bucket = {}
 
 
 def least_coins(cents)
-  cents = gets.strip.to_i
+ # cents = gets.strip.to_i
   until cents == 0
     if cents >= 25
       cents -= 25
@@ -32,6 +32,3 @@ def least_coins(cents)
   end
 end      
 
-
-
-end
