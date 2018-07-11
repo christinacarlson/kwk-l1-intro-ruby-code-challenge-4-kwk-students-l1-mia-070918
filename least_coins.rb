@@ -27,7 +27,7 @@ def least_coins(cents)
     if cents >= 25
       cents -= 25
       puts cents
-      buckets["quarters"]= q+1
+      buckets["quarters"]= q+=1
       puts buckets
       elsif cents >= 10 
         cents -= 10 
