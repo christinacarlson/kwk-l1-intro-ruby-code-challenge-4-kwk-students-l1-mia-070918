@@ -2,7 +2,7 @@
 puts "How many cents do you have?"
 cents = gets.strip.to_i
 
-buckets = {"quarters"=>0, "dimes"=>0, "nickels"=>0, "pennies"=>0}
+# buckets = {"quarters"=>0, "dimes"=>0, "nickels"=>0, "pennies"=>0}
 
 # if its > 25 take out 25 and add quarter to bucket
 
@@ -18,11 +18,17 @@ buckets = {"quarters"=>0, "dimes"=>0, "nickels"=>0, "pennies"=>0}
 
 
 def least_coins(cents)
- 
+  q=0 
+  d=0 
+  n=0 
+  p=0 
+ buckets = {"quarters"=>q, "dimes"=>d, "nickels"=>n, "pennies"=>p}
   until cents == 0
     if cents >= 25
       cents -= 25
       puts cents
+      buckets["quarters"]= q+1
+      puts buckets
       elsif cents >= 10 
         cents -= 10 
         puts cents
