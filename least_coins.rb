@@ -2,6 +2,8 @@
 puts "How many cents do you have?"
 cents = gets.strip.to_i
 
+bucket = {}
+
 # if its > 25 take out 25 and add quarter to bucket
 
 
